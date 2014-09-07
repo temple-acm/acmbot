@@ -82,7 +82,7 @@ module.exports = (robot) ->
             # Now we process the list for emitting into the channel
             finalMsg = ""
             for event in events
-                finalMsg = finalMsg + "#{event.title} - #{event.description} : #{event.when} @ #{event.where}\n"
+                finalMsg = finalMsg + "*#{event.title}* - #{event.description} : #{event.when} @ #{event.where}\n"
             msg.send finalMsg
             return
         return
